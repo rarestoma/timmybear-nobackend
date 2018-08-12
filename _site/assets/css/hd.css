@@ -44,35 +44,6 @@
     top: 3%; }
   100% {
     top: 1%; } }
-@keyframes animation-plic {
-  0% {
-    transform: rotate(0); }
-  50% {
-    transform: rotate(10deg); }
-  100% {
-    transform: rotate(0); } }
-@keyframes confetti {
-  0% {
-    width: 50%;
-    opacity: 0; }
-  50% {
-    width: 100%;
-    opacity: 1; }
-  100% {
-    width: 50%;
-    opacity: 0; } }
-@keyframes love {
-  0% {
-    width: 30%; }
-  50% {
-    width: 40%; }
-  100% {
-    width: 30%; } }
-@keyframes stars {
-  0% {
-    background-position: 0%; }
-  100% {
-    background-position: -900%; } }
 @keyframes animation-rotation {
   0% {
     transform: rotate(0); }
@@ -463,6 +434,7 @@
   position: absolute;
   width: 70%; }
 .section-shop-carousel .carousel-indicators li {
+  cursor: pointer;
   height: 190px;
   width: 254px;
   text-indent: 0;
