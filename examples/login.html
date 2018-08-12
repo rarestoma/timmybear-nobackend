@@ -1,0 +1,94 @@
+---
+---
+
+{% include path/path-assets.html %}
+
+<html>
+<head>
+  {% include head.html %}
+</head>
+  <body class="login">
+
+    {% include navbar.html %}
+
+    <div class="section-first section-first-blue">
+      <img src="../assets/img/sosete-duck.png">
+      <img src="../assets/img/sosete-donut.png">
+      <img src="../assets/img/sosete-tanc.png">
+      <div class="container">
+        <div class="card big-card">
+          <div class="row">
+          <div class="col-md-6">
+          <div class="card card-login">
+
+            <div class="card-body px-lg-5 py-lg-5">
+                <div class="text-center mb-5">
+                    <h5 class="heading pt-3">Welcome back</h5>
+                    <h2 class="subheading">Welcome back</h2>
+                    <p>Sign in to your account to continue</p>
+                </div>
+                <form role="form" id="loginForm" action="profile.html">
+                    <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" id="input_email" placeholder="Your email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" id="input_password" placeholder="Password" name="password">
+                    </div>
+                    <div class="text-right mt-4"><a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" id="signinButton" class="btn btn-sign btn-block btn-lg btn-orange mt-4" style="margin-left:0">Sign in</button>
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-preregister text-center">
+            <div class="card-body px-lg-5 py-lg-5">
+                <div class="te xt-center py-sm-5 mb-5">
+                    <h5 class="heading pt-3">I don't have an account</h5>
+                    <p>Join our awesome world</p>
+                    <a class="btn btn-lg" href="register.html">Create account</a>
+                </div>
+                <img src="../assets/img/ljmw.png">
+            </div>
+
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+
+  </div>
+
+  {% include footer.html %}
+
+      <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/hd.js"></script>
+      <!-- Forms Validations Plugin -->
+      <script src="../assets/js/plugins/jquery.validate.min.js"></script>
+      <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+      <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+
+
+      <script>
+
+      $(document).ready(function(){
+
+
+        $('#loginForm').validate({
+            rules: {
+                email: {
+                    required: true
+                },
+                password: {
+                  required: true
+                }
+            }
+        });
+
+      });
+
+      </script>
+  </body>
+</html>
